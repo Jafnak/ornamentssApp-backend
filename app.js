@@ -13,5 +13,5 @@ app.post("/add",(req,res)=>{
     let input = req.body
     let ornament = new ornamentmodel(input)
     ornament.save()
-    res.json({"status":"success"})
+    res.json({"status":"successs"})
 })
