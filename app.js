@@ -15,3 +15,18 @@ app.post("/add",(req,res)=>{
     ornament.save()
     res.json({"status":"successs"})
 })
+
+app.post("/view",(req,res)=>{
+    ornamentmodel.find().then(
+        (data)=>{
+            res.json(data)
+        }
+    ).catch(
+        (error)=>{
+            res.json(error)
+        }
+    )
+})
+app.listen(8080,()=>{
+    console.log("server started")
+})
