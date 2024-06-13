@@ -13,7 +13,7 @@ app.post("/add",(req,res)=>{
     let input = req.body
     let ornament = new ornamentmodel(input)
     ornament.save()
-    res.json({"status":"successs"})
+    res.json({"status":"success"})
 })
 
 app.post("/view",(req,res)=>{
